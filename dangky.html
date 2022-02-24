@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <style>
+        #formdangky {
+            width: 600px;
+            margin: auto;
+            margin-top: 110px;
+            border: 1px solid rgb(23, 24, 26);
+            font-size: 22px;
+            border-radius: 15px;
+            box-shadow: 5px 0px 5px 3px rgb(153, 161, 172);
+            
+        }
+
+        #formdangky h4 {
+            color: rgb(241, 109, 109);
+            text-align: center;
+            background-color: rgb(244, 246, 250);
+            margin: 0;
+            padding-top: 20px;
+            border-radius: 12px 12px 0px 0px;
+        }
+
+        #formdangky label {
+            width: 150px;
+            color: rgb(19, 18, 17);
+            margin-left: 25px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        #formdangky .txt {
+            width: 350px;
+            border: 2px solid darkorange;
+            padding: 10px;
+            border-radius: 9px;
+        }
+
+        #formdangky button {
+            width: 150px;
+            height: 40px;
+            font-size: 1em;
+            background-color: rgb(54, 132, 248);
+            border: 2px solid rgb(37, 58, 89);
+            color: #fff;
+            border-radius: 9px;
+           
+            margin-right: 20px;
+        }
+
+        #formdangky p textarea {
+            border: 2px solid darkorange;
+            border-radius: 9px;
+        }
+
+        #formdangky .ngang {
+            display: flex;
+            width: 350px;
+            height: 40px;
+            margin-left: 180px;
+            margin-bottom: 25px;
+        }
+
+        #formdangky .sothich {
+            display: flex;
+        }
+
+        #formdangky p .selec {
+            width: 374px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="xuly.php" id="formdangky" method="post">
+        <h4>ĐĂNG KÝ THÀNH VIÊN</h4>
+        <p>
+            <label>Tên Đăng Nhập</label>
+            <input type="text" class="txt" minlength="4" maxlength="20" placeholder="Nhập từ 4 đến 20 ký tự" name="un">
+        </p>
+        <p>
+            <label>Mật Khẩu</label>
+            <input type="text" class="txt" minlength="8" maxlength="20" placeholder="Nhập từ 8 đến 20 ký tự" name="pw">
+        </p>
+        <p>
+            <label>Phái</label>
+            <input type="radio" value="0" name="phai" checked>Nữ
+            <input type="radio" value="0" name="phai">Nam
+        </p>
+        <p>
+            <label>Hình ảnh</label>
+            <input type="file" class="txt" placeholder="Chọn hình của bạn" name="ha">
+        </p>
+        <p>
+            <label>Quốc tịch</label>
+            <select name="pt" class="txt selec">
+                <option value="0">Chọn Quốc Tịch</option>
+                <option value="1">Việt Nam</option>
+                <option value="2">USA</option>
+                <option value="3">Khác</option>
+            </select>
+        </p>
+        
+        <p>
+            <label>Ghi chú</label>
+            <textarea cols="48" rows="4"></textarea>
+        </p>
+        <label class="ngang">
+            <button id="dk" type="submit">Đăng ký</button>
+            <button id="reset" type="reset">Làm lại</button>
+        </label>
+    </form>
+</body>
+
+</html>

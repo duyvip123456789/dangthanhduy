@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên mật khẩu</title>
+    <style>
+        #formdangky {
+            width: 600px;
+            margin: auto;
+            border: 2px solid rgb(25, 25, 26);
+            font-size: 22px;
+            border-radius: 15px;
+            box-shadow: 5px 0px 5px 3px rgb(153, 161, 172);
+            margin-top: 110px;
+            
+        }
+
+        #formdangky h4 {
+            color: rgb(241, 109, 109);
+            text-align: center;
+            background-color: rgb(238, 244, 253);
+            margin: 0;
+            padding: 10px 0;
+            border-radius: 12px 12px 0px 0px;
+        }
+
+        #formdangky label {
+            width: 150px;
+            color: rgb(8, 8, 8);
+            margin-left: 25px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        #formdangky .txt {
+            width: 350px;
+            border: 2px solid rgb(235, 168, 114);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #formdangky button {
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+            background-color: rgb(84, 73, 240);
+            border: 1px solid rgb(223, 229, 236);
+            color: #fff;
+            border-radius: 5px;
+           
+            margin-right: 16px;
+        }
+
+        #formdangky p textarea {
+            border: 2px solid darkorange;
+            border-radius: 10px;
+        }
+
+        #formdangky .ngang {
+            display: flex;
+            width: 350px;
+            height: 40px;
+            margin-left: 290px;
+            margin-bottom: 50px;
+            
+        }
+
+        #formdangky .sothich {
+            display: flex;
+        }
+
+        #formdangky p .selec {
+            width: 374px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <form action="xuly.php" id="formdangky" method="post">
+        <h4>Quên mật khẩu</h4>
+        <p>
+            <label>Tên Đăng Nhập</label>
+            <input type="text" class="txt" minlength="4" maxlength="20" placeholder="Nhập tên tài khoản muốn nhớ mật khẩu" name="un">
+        </p>
+        <p>
+            <label>Số điện thoại</label>
+            <input type="text" class="txt" minlength="8" maxlength="20" placeholder="Nhập số điện thoại đăng ký tài khoản" name="pw">
+        </p>
+        <p>
+            <label>Phái</label>
+            <input type="radio" value="0" name="phai" checked>Nữ
+            <input type="radio" value="0" name="phai">Nam
+        </p>
+        
+        <p>
+            <label>Quốc tịch</label>
+            <select name="pt" class="txt selec">
+                <option value="0">Chọn Quốc Tịch</option>
+                <option value="1">Việt Nam</option>
+                <option value="2">USA</option>
+                <option value="3">Khác</option>
+            </select>
+        </p>
+       
+        <p>
+            <label>Ghi chú</label>
+            <textarea cols="48" rows="4"></textarea>
+        </p>
+        <label class="ngang">
+            <button id="dk" type="submit">Gửi mật khẩu</button>
+            
+        </label>
+    </form>
+</body>
+
+</html>

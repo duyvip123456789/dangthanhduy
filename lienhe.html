@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <title>Liên hệ</title>
+    <style>
+        #formdangky {
+            width: 600px;
+            font-size: 22px;
+            margin-top: 50px;
+        }
+
+        #formdangky h4 {
+            color: rgb(241, 109, 109);
+            text-align: center;
+            background-color: rgb(244, 246, 250);
+            margin: 0;
+            padding: 10px 0;
+            border-radius: 12px 12px 0px 0px;
+        }
+
+        #formdangky label {
+            width: 150px;
+            color: rgb(19, 18, 17);
+            margin-left: 25px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        #formdangky .txt {
+            width: 375px;
+            border: 2px solid darkorange;
+            padding: 10px;
+            border-radius: 9px;
+        }
+
+        #formdangky button {
+            width: 150px;
+            height: 40px;
+            font-size: 1em;
+            background-color: rgb(54, 132, 248);
+            border: 2px solid rgb(37, 58, 89);
+            color: #fff;
+            border-radius: 9px;
+
+            margin-right: 20px;
+        }
+
+        #formdangky p textarea {
+            border: 2px solid darkorange;
+            border-radius: 9px;
+        }
+
+        #formdangky .ngang {
+            display: flex;
+            width: 350px;
+            height: 40px;
+
+
+
+        }
+
+        #formdangky .sothich {
+            display: flex;
+        }
+
+        #formdangky p .selec {
+            width: 374px;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            font-family: sans-serif;
+            border: 1px darkgrey solid;
+        }
+
+        .tieude {
+            background-color: rgb(11, 12, 12);
+            padding: 10px;
+        }
+
+        .noidung {
+            margin: auto;
+            color: rgb(6, 7, 7);
+        }
+
+        .tieude {
+            font-size: 20px;
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0"
+        nonce="sVIQOrmM"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0"
+        nonce="cn3rK31F"></script>
+
+
+
+    <div class="container">
+
+        <div class="tieude">
+            Liên hệ
+        </div>
+        <div class="noidung">
+            <table width="100%">
+                <tr>
+                    <td width="50%">
+                        <form action="xuly.php" id="formdangky" method="post">
+                            <p>
+                                <label>Tên </label>
+                                <input type="text" class="txt" minlength="4" maxlength="30"
+                                    placeholder="Nhập từ 4 đến 20 ký tự" name="un">
+                            </p>
+
+                            
+
+                            <p>
+                                <label>Quốc tịch</label>
+                                <select name="pt" class="txt selec">
+                                    <option value="0">Chọn Quốc Tịch</option>
+                                    <option value="1">Việt Nam</option>
+                                    <option value="2">USA</option>
+                                    <option value="3">Khác</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label>Ghi chú</label>
+                                <textarea cols="48" rows="4"></textarea>
+                            </p>
+                            <p>
+                                <label>Giới tính</label>
+                                <input type="radio" value="0" name="phai" checked>Nữ
+                                <input type="radio" value="0" name="phai">Nam
+                            </p>
+                            <label class="ngang">
+                                <button id="dk" type="submit">gửi</button>
+
+                            </label>
+                        </form>
+                    </td>
+                    <td width="50%">
+                        <p> Chất lượng: Luôn đi đầu trong việc gây dựng uy tín, trách nhiệm để đảm bảo chất lượng sản
+                            phẩm,
+                            FPT Retail đem đến cho khách hàng sự an tâm tuyệt đối khi mua sắm các sản phẩm công nghệ.
+                        </p>
+                        <p>
+                            Tin cậy: : Chữ “tín” chính là điều mà FPT Retail luôn chú trọng trong hoạt động phát triển
+                            thương hiệu, là điểm tựa niềm tin vững chắc cho khách hàng, là đối tác tin cậy với các hãng
+                            công
+                            nghệ.
+                        </p>
+                        <p>
+                            Thân thiện: Hình ảnh FPT Retail thân thiện với khách hàng và tích cực trong các hoạt động
+                            cộng
+                            đồng chính là hướng đi lâu dài.
+                        </p>
+                        <p>
+                            Chăm sóc: Với mục tiêu phục vụ khách hàng là ưu tiên số một, FPT Retail đang ngày càng hoàn
+                            thiện hơn chất lượng dịch vụ, đào tạo đội ngũ nhân viên nhiệt tình, trung thực, chân thành,
+                            làm
+                            hài lòng bất cứ khách hàng nào đến mua sắm.
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="tieude">
+            Tin Tức: 24H CÔNG NGHỆ
+        </div>
+        <div class="noidung">
+            <table width="100%">
+                <tr>
+                    <td width="50%">
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/226935/Slider/samsung-galaxy-z-fold-3-slider-tong-quan-1020x570.jpg"
+                            width="100%" alt="">
+
+                    </td>
+
+                    <td width="50%">
+                        <p>
+                            Galaxy Z Fold3 5G, chiếc điện thoại được nâng cấp toàn diện về nhiều mặt, đặc biệt đây là
+                        </p>
+                        <p>
+                            điện thoại màn hình gập đầu tiên trên thế giới có camera ẩn (08/2021). Sản phẩm sẽ là một
+                        </p>
+                        “cú hit” của Samsung góp phần mang đến những trải nghiệm mới cho người dùng.
+                        Thiết kế nâng tầm smartphone màn hình gập.
+                        </p>
+                        <p>Có thể thấy mẫu smartphone Galaxy Z Fold3 lần này vẫn giữ nguyên ngoại hình cùng cơ chế màn
+                            hình gập mở dạng quyển sách như của tiền nhiệm, hồ biến chiếc smartphone thành một chiếc máy
+                            tính bảng mini một cách dễ dàng và ngược lại.
+
+                        </p>
+                    </td>
+                </tr>
+                </p>
+            </table>
+            <div class="fb-like"
+                data-href="https://caodang.fpt.edu.vn/tuyen-sinh-cao-dang-xet-tuyen?utm_source=Coccoc&amp;utm_medium=TS2021&amp;utm_campaign=Phuong&amp;utm_term=coccoc&amp;utm_content=TS2021&amp;md=_0zLe50vdaa*Cr3GhsODtX4tKHPqZpu*62*RZhd6jTQ19NKt4*MLOLT806Jt2rK2jFz5WiIPuLKLWwG10QziNL768nlcmmQnlKWjvQxpDsT7tiOXdprogNZ5o."
+                data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+        </div>
+        <hr>
+
+        <div class="tieude">
+            Địa chỉ
+        </div>
+        <div class="noidung">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15672.806421147743!2d106.63582288365555!3d10.872265376710148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529f1faf02707%3A0x8423b904b20f9847!2zQ2FvIMSR4bqzbmcgRlBUIHBvbHl0ZWNobmlj!5e0!3m2!1sen!2s!4v1645493455122!5m2!1sen!2s"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
